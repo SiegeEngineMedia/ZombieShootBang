@@ -6,7 +6,6 @@ public class SuccessHandler : MonoBehaviour
 {
     [SerializeField] Canvas successCanvas;
 
-
     private void Start()
     {
        successCanvas.enabled = false;   
@@ -18,5 +17,6 @@ public class SuccessHandler : MonoBehaviour
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
     }
 }

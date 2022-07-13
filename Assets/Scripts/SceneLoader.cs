@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     public void ReloadGame()
     {
-        Debug.Log("asdf");
         SceneManager.LoadScene(0);  
-        Time.timeScale = 1; 
     }
 
     public void QuitGame()

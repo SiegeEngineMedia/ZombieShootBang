@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6464836998134263473}
   - component: {fileID: 5109566186298026792}
   - component: {fileID: 1639446385592525378}
+  - component: {fileID: 5010546404983783904}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7231701763875346729}
-  m_LocalRotation: {x: -0.6532813, y: 0.27059782, z: 0.27059796, w: 0.65328187}
+  m_LocalRotation: {x: 0.6532815, y: -0.27059805, z: -0.27059805, w: -0.6532815}
   m_LocalPosition: {x: 0, y: 0.17, z: 0}
   m_LocalScale: {x: 1, y: 0.11659, z: 1}
   m_Children: []
   m_Father: {fileID: 8946664266837831791}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: -90, y: 360, z: 45}
 --- !u!33 &6464836998134263473
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,6 +98,25 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!95 &5010546404983783904
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7231701763875346729}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e7c47602facfb34c9ba72ea326e3301, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8653501313972809460
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,3 +176,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
+  ammoType: 0

@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        if (ammoSlot.GetCurrentAmmo() > 0)
+        if (ammoSlot.GetCurrentAmmo() > 0 && Time.timeScale != 0)
         {
             PlayMuzzleFlash();
             ProcessRaycast();
